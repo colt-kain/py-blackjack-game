@@ -11,3 +11,10 @@ def display_title():
     print('(Important NOTE: Ace = 10Val.)')
     print('(Betting amounts: 5, 10, 25, 50, 100.)') 
     print('--------------------------------------\n')
+
+def wait_to_continue():
+    user_confirmation = input('Please press ENTER to continue... ')
+
+    while user_confirmation != '':
+        print('Invalid response.\n')
+        user_confirmation = input('Please press ENTER to continue... ')
