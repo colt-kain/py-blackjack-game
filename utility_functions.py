@@ -18,3 +18,16 @@ def wait_to_continue():
     while user_confirmation != '':
         print('Invalid response.\n')
         user_confirmation = input('Please press ENTER to continue... ')
+
+def display_round_outcome(outcome, player_bet):
+    round_sign = ''
+    if outcome == 'win':
+        round_sign = '+'
+    elif outcome == 'lose':
+        round_sign = '-'
+    else:
+        round_sign = '[X]'
+
+    print('---------------')
+    print(f'Round: {outcome}.\nBALANCE {round_sign}${player_bet}')
+    print('---------------\n')
